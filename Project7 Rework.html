@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Project 7</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="grid-container">
+
+            <!--Header-->
+            <header>
+                <h1>Your App</h1>
+                <div class="bell-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill=#fff/></svg>
+
+                    <div class="notifications"></div>
+                </div>
+
+                    <img src="#">
+
+                    <h3 class="Name">Christopher Lee</h3>
+                
+            </header>
+
+            <!--Navigation-->
+
+            <div class="main-nav">       
+                    <img src="icons/icon-dashboard.svg" alt="dashboard" class="nav-img">
+                    <img src="icons/icon-members.svg" alt="members" class="nav-img">
+                    <img src="icons/icon-visits.svg" alt="visits" class="nav-img">
+                    <img src="icons/icon-settings.svg" alt="settings" class="nav-img">
+            </div>
+
+            <!--Main Section -->
+            <div class="main">
+                <div class="main-header">
+                    <h2 class="headline">Dashboard</h2>
+                    <div class="main-header-search">
+                        <input type="search" placeholder="Search...">
+                    </div>
+                </div>
+                
+               <div class="alert" id="alert">
+                    <!-- JS will insert alert here -->
+                </div>
+
+                <!-- Line graph charts -->
+                <section class="traffic">
+                    <div class="traffic-header">
+                        <h3>Traffic</h3>
+                        <ul class="traffic-nav">
+                            <li class="traffic-nav-link">Hourly</li>
+                            <li class="traffic-nav-link">Daily</li>
+                            <li class="traffic-nav-link active">Weekly</li>
+                            <li class="traffic-nav-link">Monthly</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="widget-container-full">
+                        <!-- element line graph will attach to -->
+                        <canvas id="traffic-chart"></canvas>
+                    </div>
+                </section>
+                  
+                <!-- Bar graph -->
+                <section class="daily">
+                    <h3>Daily</h3>
+
+                    <div class="widget-container-half">
+                        <!-- element bar graph will attach to -->
+                        <canvas id="daily-chart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Donut chart -->
+                <section class="mobile">
+                    <div class="widget-container-half">
+                        <!-- element donut chart will attach to -->
+                        <canvas id="mobile-chart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Social Status -->
+                <div class="social-container">
+                    <div class="social-image">
+                    <!-- social media image -->
+                    </div>
+
+                    <div class="social-text">
+                        <p>Twitter</p>
+                        <p>10,345</p>
+                    </div>
+                </div>
+
+                <div class="social-container">
+                    <div class="social-image">
+                    <!-- social media image -->
+                    </div>
+
+                    <div class="social-text">
+                        <p>Facebook</p>
+                        <p>9,234</p>
+                    </div>
+                </div>
+
+                <div class="social-container">
+                    <div class="social-image">
+                    <!-- social media image -->
+                    </div>
+
+                    <p>Instagram</p>
+                    <p>12,567</p>
+                </div>
+
+                <section class="members">
+                    <h3>New Members</h3>
+
+                    <div class="member-container">
+                        <img src="images/member-1.jpg" class="profile-image" alt="profile-image">
+                        <div class="member-text">
+                            <p>Name Here</p>
+                            <a href="#">name@email.com</a>
+                        </div>
+                        <p>07.05.21</p>
+                    </div>
+
+                    <div class="member-container">
+                        <img src="images/member-2.jpg" class="profile-image" alt="profile-image">
+                        <div class="member-text">
+                            <p>Name Here</p>
+                            <a href="#">name@email.com</a>
+                        </div>
+                        <p>07.05.21</p>
+                    </div>
+
+                    <div class="member-container">
+                        <img src="images/member-3.jpg" class="profile-image" alt="profile-image">
+                        <div class="member-text">
+                            <p>Name Here</p>
+                            <a href="#">name@email.com</a>
+                        </div>
+                        <p>07.05.21</p>
+                    </div>
+                </section>
+
+                <section class="message">
+                    <h3>Message User</h3>
+
+                    <form class="widget-container">
+                        <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                        <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                        <button class="button-primary" id="send">Send</button>
+                    </form>
+                </section>
+
+                <!-- Local settings widget -->
+
+                <section class="settings">
+                    <h3>Settings</h3>
+
+                    <!-- customer CSS toggle code -->
+
+                    <!-- customer CSS toggle code -->
+
+                    <select class="form-field" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option>Eastern</option>
+                        <option>Central</option>
+                        <option>Mountain</option>
+                        <option>Pacific</option>
+                    </select>
+
+                    <div class="settings-button">
+                        <button class="button-primary" id="save">Save</button>
+                        <button class="button-disabled" id="cancel">Cancel</button>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+        </div>
+
+    </body>
+    <script type="text/javascript" src="chart.js"></script>
+</html>
