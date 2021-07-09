@@ -104,9 +104,23 @@ img {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 
+.social-container:nth-child(n+1) {
+    margin-bottom: 30px;
+}
 
+.social-image {
+    margin-right: 15px;
+}
+
+/** Members Section **/
+
+.member-container {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /** Chart Section **/ 
 
