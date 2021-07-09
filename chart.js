@@ -89,7 +89,7 @@ var anotherCharts = new Chart(bars, {
 
 // Alert Banner
 
-/** const alertBanner = document.getElementById("alert");
+/* const alertBanner = document.getElementById("alert");
 
 alertBanner.innerHTML = 
     <div class="alert-banner">
@@ -102,5 +102,5 @@ alertBanner.addEventListener('click', e => {
     if (element.classList.contains("alert-banner-close")) {
         alertBanner.style.display = "none"
     }
-}) **/
+}); */
     
