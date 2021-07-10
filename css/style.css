@@ -86,6 +86,12 @@ img {
     margin-bottom: 10px;
 }
 
+.traffic-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 /** Main-Header Section **/
 
 .main-header {
@@ -118,8 +124,31 @@ img {
 /** Members Section **/
 
 .member-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.member-container img {
     margin-left: auto;
     margin-right: auto;
+}
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    margin-bottom: 25px;
+}
+
+.form-area {
+    height: 100px;
+    margin-bottom: 25px;
 }
 
 /** Chart Section **/ 
