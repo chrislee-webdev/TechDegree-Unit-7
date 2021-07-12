@@ -18,6 +18,11 @@ var points = document.getElementById('traffic-chart').getContext('2d');
                             }]
                         },
                         options: {
+                            layout: {
+                                padding: {
+                                    left: 50,
+                                }
+                            },
                             scales: {
                                 y: {
                                     beginAtZero: true
@@ -36,7 +41,7 @@ var anotherCharts = new Chart(bars, {
         datasets:[{
             data: [65, 100, 200, 175, 210, 190, 135],
             backgroundColor: [
-            'rgba(54, 162, 235)'
+            'rgba(162, 54, 235)'
             ],
             borderWidth: [
                 1
@@ -45,6 +50,12 @@ var anotherCharts = new Chart(bars, {
     },
 
     options: {
+        layout: {
+            padding: {
+                left: 60,
+            }
+        },
+
         scales: {
             y: {
                 beginAtZero: true
@@ -79,6 +90,7 @@ var anotherCharts = new Chart(bars, {
                         },
 
                         options: {
+                            aspectRatio: 1.9,
                             plugins: {
                                 legend: true
                             }

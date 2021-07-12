@@ -71,7 +71,7 @@ header {
 
 .widget-container-full,
 .widget-container-half {
-    width: 95vw;
+    width: 90vw;
 }
 
 /** Navigation Bar **/
@@ -84,8 +84,8 @@ header {
     justify-content: space-evenly;
 }
 
-img {
-    width: 25px;
+.nav-img {
+    width:25px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -117,7 +117,7 @@ img {
     align-items: center;
     justify-content: space-evenly;
     width: 200px;
-    height:100px;
+    height: 100px;
     border-radius: 25px;
     border: silver 1px solid;
 }
@@ -139,8 +139,10 @@ img {
 }
 
 .member-container img {
+    width: 100px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
 }
 
 .widget-container {
@@ -164,6 +166,20 @@ img {
 
 .widget-container-half {
     margin-bottom: 50px;
+}
+
+/** Settings Section **/
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settings-button {
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 /** Media Query **/
@@ -221,5 +237,5 @@ img {
         flex-direction: row;
         justify-content: space-evenly;
     }
-}
 
+}
