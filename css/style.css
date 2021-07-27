@@ -35,6 +35,11 @@ h2 {
 h3 {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding-left: 25px;
+}
+
+.social-heading {
+    margin-top: -30px;
 }
 
 ul {
@@ -92,7 +97,8 @@ header {
 
 .traffic,
 .daily,
-.mobile {
+.mobile,
+.message {
     border-bottom: lightgrey 1px solid;
 }
 
@@ -140,10 +146,12 @@ header {
     margin-right: auto;
     align-items: center;
     justify-content: space-evenly;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 150px;
     border-radius: 25px;
     border: silver 1px solid;
+    background-color: rgb(231, 231, 231);
+    font-size: xx-large;
 }
 
 .social-container:nth-child(n+1) {
@@ -209,12 +217,21 @@ header {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    width: 143.99px;
 }
+
+
 
 .settings-button {
     text-align: center;
     margin-bottom: 100px;
 }
+
+#save,
+#cancel {
+    width: 71px;
+}
+
 
 /** Media Query **/
 
