@@ -187,7 +187,7 @@ const mobileData = {
 const mobileOptions = {
     plugins: {
         legend: {
-            position: "right",
+            position: "bottom",
             labels: {
                 boxWidth: 20,
                 fontStyle: "bold"
@@ -200,5 +200,8 @@ const mobileOptions = {
 let mobileChart = new Chart(mobileCanvas, {
     type: "doughnut",
     data: mobileData,
-    options: mobileOptions
+    options: {
+        mobileOptions,
+        aspectRatio: 1.9,
+    }
 });

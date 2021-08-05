@@ -42,6 +42,11 @@ h3 {
     margin-top: -30px;
 }
 
+.new-member-heading,
+.message-heading {
+    margin-top: -15px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -93,6 +98,7 @@ header {
 .widget-container {
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 30px;
 }
 
 .traffic,
@@ -304,4 +310,10 @@ header {
         justify-content: space-evenly;
     }
 
+    .widget-container-full,
+    .widget-container-half,
+    .widget-container {
+        padding-left: 50px;
+    }
+    
 }
