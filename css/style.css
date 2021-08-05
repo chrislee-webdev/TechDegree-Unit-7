@@ -33,13 +33,9 @@ h2 {
 }
 
 h3 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 25px;
-}
-
-.social-heading {
-    margin-top: -30px;
 }
 
 .new-member-heading,
@@ -98,7 +94,8 @@ header {
 .widget-container {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 30px;
+    margin: auto;
+    
 }
 
 .traffic,
@@ -226,8 +223,7 @@ header {
 
 /** Chart Section **/ 
 
-.widget-container-half,
-.mobile {
+.widget-container-half {
     margin-bottom: 50px;
 }
 
