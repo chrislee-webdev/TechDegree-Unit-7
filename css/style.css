@@ -265,7 +265,8 @@ header {
     }
 
     .traffic,
-    .social {
+    .social,
+    .dashboard-header {
         grid-column: 1 / span 2;
     }
 
@@ -311,5 +312,17 @@ header {
     .widget-container {
         padding-left: 50px;
     }
-    
+
+    .main-header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .search-field {
+        width: 500px;
+    }
+
+    .alert-banner-close {
+        padding-left: 15px;
+    }
 }
