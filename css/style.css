@@ -29,22 +29,27 @@ body {
 }
 
 h2 {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 h3 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 25px;
 }
 
 h4 {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     padding-left: 30px;
 }
 
-.message-header {
+
+.recent-activity {
     padding-top: 0;
+}
+
+.message-header {
+    padding-top: 15px;
 }
 
 /* .new-member-heading,
@@ -182,7 +187,7 @@ header {
 }
 
 .social-container:nth-child(n+1) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .social-image {
@@ -195,13 +200,13 @@ header {
     border-top: lightgrey 1px solid;   
 }
 
-.member-container {
+.member-container{
     display: flex;
     flex-direction: column;
     text-align: center;
     border-bottom: lightgrey 1px solid;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .member-container img {
@@ -279,6 +284,7 @@ header {
     .social,
     .dashboard-header,
     .members,
+    .recent-activity,
     .message,
     .settings {
         grid-column: 1 / span 2;
@@ -304,6 +310,10 @@ header {
         width: 45vw;
     }
 
+    .mobile {
+        border-left: lightgray 1px solid;
+    }
+
     .main-nav {
         display: flex;
         flex-direction: column;
@@ -324,7 +334,7 @@ header {
     .widget-container-full,
     .widget-container-half
     /* .widget-container */ {
-        padding-left: 50px;
+        padding-left: 25px;
     }
 
     .main-header {
@@ -363,7 +373,7 @@ header {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         line-height: 25px;
     }
 
