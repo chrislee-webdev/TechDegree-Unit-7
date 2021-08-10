@@ -38,8 +38,12 @@ h3 {
     padding-left: 25px;
 }
 
-.message-header,
-.settings-header {
+h4 {
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.message-header {
     padding-top: 0;
 }
 
@@ -240,8 +244,6 @@ header {
     width: 143.99px;
 }
 
-
-
 .settings-button {
     text-align: center;
     margin-bottom: 100px;
@@ -254,6 +256,12 @@ header {
 
 
 /** Media Query **/
+
+@media screen and (max-width: 767px) {
+    .toggle-settings {
+        display:none;
+    }
+}
 
 @media (min-width: 768px) {
     .grid-container {
@@ -270,19 +278,21 @@ header {
     .traffic,
     .social,
     .dashboard-header,
-    .members {
+    .members,
+    .message,
+    .settings {
         grid-column: 1 / span 2;
     }
 
-    .daily,
-    /* .members, */
-    .message{
+    .daily
+    /* .members,
+    .message */{
         grid-column: 1 / span 1;
     }
 
     .mobile,
-    .activity,
-    .settings {
+    .activity
+    /* .settings */ {
         grid-column: 2 span 1;
     }
 
@@ -312,8 +322,8 @@ header {
     }
 
     .widget-container-full,
-    .widget-container-half,
-    .widget-container {
+    .widget-container-half
+    /* .widget-container */ {
         padding-left: 50px;
     }
 
@@ -343,6 +353,8 @@ header {
     .social-container {
         width: 220px;
         height: 100px;
+        font-size: x-large;
+        justify-content: center;
     }
 
     /* New Member */  
@@ -360,10 +372,22 @@ header {
         margin-right: 0;
     }
 
-    /* Message */
+    /* Message and Settings */
 
-    .form-area,
+    .widget-container,
+    .form-field,
     #send {
-        width: 143.98px;
+        width: 650px;
+        padding-top: 0;
     }
+
+    .form-area {
+        height: 500px;
+    }
+
+    #save,
+    #cancel {
+        width: 325px;
+    }
+   
 }
