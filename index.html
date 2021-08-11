@@ -5,6 +5,7 @@
         <title>Project 7</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/toggle-switch.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
     </head>
@@ -22,7 +23,7 @@
                     <div class="notifications"></div>
                 </div>
 
-                    <img src="#">
+                    <img src="#" class="user-profile-img">
 
                     <h3 class="Name">Christopher Lee</h3>
                 
@@ -249,11 +250,37 @@
 
                     <div class="toggle-code">
                     <!-- customer CSS toggle code -->
-                        <p>Send Email Notifications</p>
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                          
+                            <h4 class="toggle-settings">
+                              Send Email Notifications
+                            </h4>
+                          
+                            <span class="on-off">
+                              <span>On</span>
+                              <span>Off</span>
+                              <a></a>
+                            </span>
+                          </label>
+                    </div>
 
-                    <!-- customer CSS toggle code -->
-                        <p>Set Profile to Public</p>
+                    <!-- customer CSS toggle code -->         
 
+                    <div class="toggle-code">
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                          
+                            <h4 class="toggle-settings">
+                              Set profile to public
+                            </h4>
+                          
+                            <span class="on-off">
+                              <span>On</span>
+                              <span>Off</span>
+                              <a></a>
+                            </span>
+                          </label>                   
                     </div>
 
                     <select class="form-field" id="timezone">
