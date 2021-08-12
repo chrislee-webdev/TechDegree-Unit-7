@@ -76,7 +76,7 @@ header {
     grid-area: header;
     background-color: lightsteelblue;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -241,11 +241,17 @@ header {
 
 /** Toggle **/
 
-.toggle-code {
+.switch-light {
     text-align: center;
-    width: 50%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+}
+
+.on-off {
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
 
 .toggle-settings{
@@ -280,12 +286,6 @@ header {
 
 
 /** Media Query **/
-
-@media screen and (max-width: 767px) {
-    .toggle-settings {
-        display:none;
-    }
-}
 
 @media (min-width: 768px) {
     .grid-container {
