@@ -241,22 +241,29 @@ header {
 
 /** Toggle **/
 
-.switch-light {
+/* .switch-light {
     text-align: center;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between; */
+    justify-content: space-between;
+} */
+
+#switch-flex {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.on-off {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+#toggle-switch {
+    margin-right: 25px;
+    width: 25%;
 }
 
 .toggle-settings{
-    padding-left: 0;
+    padding-left: 25px;
     padding-bottom: 15px;
+    flex-grow: 2;
 }
 
 .toggle-settings:nth-child(2){
