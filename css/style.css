@@ -76,13 +76,15 @@ header {
     grid-area: header;
     background-color: lightsteelblue;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .bell-icon {
-    width: 25px;
-    height: 25px;
+    padding-top: 15px;
+    width: 60px;
+    height: 60px;
     position: relative;
 }
 
@@ -93,9 +95,15 @@ header {
     background-color: red;
     display: inline-block;
     position: absolute;
-    left: 20px;
-    bottom: 20px;
-    
+    left: 30px;
+    bottom: 50px;   
+}
+
+.user-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
 }
 
 .widget-container-full,
@@ -335,16 +343,21 @@ header {
 
    h1 {
        flex-grow: 2;
-       padding-left: 30px;
+       padding-left: 15px;
    }
 
-   .Name{
-       padding-right: 30px;
+    .Name{
+       padding-right: 15px;
    }
 
    .bell-icon {
-       margin-right: 30px;
-   }
+        margin-right: 15px;
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+   
     .daily
     /* .members,
     .message */{
