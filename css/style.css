@@ -295,6 +295,15 @@ header {
 #save,
 #cancel {
     width: 133px;
+    border-radius: 3px;
+}
+
+#save {
+    background-color: lightskyblue;   
+}
+
+#cancel {
+    background-color: lightgray;
 }
 
 /* .form-field {
