@@ -28,6 +28,10 @@ body {
     display: grid;
 }
 
+h1 {
+    font-size: medium;
+}
+
 h2 {
     margin-top: 15px;
 }
@@ -42,7 +46,6 @@ h4 {
     padding-bottom: 15px;
     padding-left: 30px;
 }
-
 
 .recent-activity {
     padding-top: 0;
@@ -77,14 +80,15 @@ header {
     background-color: lightsteelblue;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .bell-icon {
-    padding-top: 15px;
-    width: 60px;
-    height: 60px;
+    /* padding-top: 15px; */
+    /* margin-left: 10px; */
+    width: 20px;
+    height: 20px;
     position: relative;
 }
 
@@ -95,15 +99,24 @@ header {
     background-color: red;
     display: inline-block;
     position: absolute;
-    left: 30px;
-    bottom: 50px;   
+    left: 15px;
+    bottom: 20px;   
+}
+
+.bell-icon:hover {
+    transform: scale(1.5);
 }
 
 .user-profile-img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    margin-left: 15px;
+    /* margin-left: 25px; */
+}
+
+.Name {
+    padding-left: 0;
+    font-size: medium;
 }
 
 .widget-container-full,
@@ -198,8 +211,10 @@ header {
     margin-bottom: 15px;
 }
 
-.social-image {
-    margin-right: 15px;
+svg {
+    padding: 12.5px;
+    border-radius: 50%;
+    background-color: grey;
 }
 
 /** Members Section **/
