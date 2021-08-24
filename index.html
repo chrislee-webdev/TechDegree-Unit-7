@@ -25,20 +25,32 @@
 
                     <img src="images/member-2.jpg" class="user-profile-img">
 
-                    <h3 class="Name">Christopher Lee</h3>              
+                    <h1 class="Name">Christopher Lee</h1>              
             </header>
 
             <!--Navigation-->
 
-            <div class="main-nav">       
-                    <img src="icons/icon-dashboard.svg" alt="dashboard" class="nav-img">
-                    <img src="icons/icon-members.svg" alt="members" class="nav-img">
-                    <img src="icons/icon-visits.svg" alt="visits" class="nav-img">
-                    <img src="icons/icon-settings.svg" alt="settings" class="nav-img">
+            <div class="main-nav">
+                    <a href="#dashboard">  
+                        <img src="icons/icon-dashboard.svg" alt="dashboard" class="nav-img">
+                    </a>
+
+                    <a href="#members">
+                        <img src="icons/icon-members.svg" alt="members" class="nav-img">
+                    </a>
+                    
+                    <a href="#visits">
+                        <img src="icons/icon-visits.svg" alt="visits" class="nav-img">
+                    </a>
+
+                    <a href="#settings">                  
+                        <img src="icons/icon-settings.svg" alt="settings" class="nav-img">
+                    </a> 
+                    
             </div>
 
             <!--Main Section -->
-            <div class="main">
+            <div class="main" id="dashboard">
 
                 <div class="dashboard-header">
                     <div class="main-header">
@@ -90,7 +102,7 @@
 
                 <!-- Social Status -->
                 
-                <section class="social">
+                <section class="social" id="visits">
                     <h3>Social Stats</h3>
 
                 <div class = "social-container-large-view">
@@ -125,8 +137,8 @@
                     </div>
 
                     <div class="social-text">
-                        <p>Facebook</p>
-                        <p>9,234</p>
+                        <p class="social-media">Facebook</p>
+                        <p class="visitors">9,234</p>
                     </div>
                 </div>
 
@@ -164,7 +176,7 @@
                 </div>
                 </section>
 
-                <section class="members">
+                <section class="members" id="members">
                     <h3 class="new-member-heading">New Members</h3>
 
                     <div class="member-container">
@@ -187,6 +199,15 @@
 
                     <div class="member-container">
                         <img src="images/member-3.jpg" class="profile-image" alt="profile-image">
+                        <div class="member-text">
+                            <p>Name Here</p>
+                            <a href="#" class="email">name@email.com</a>
+                        </div>
+                        <p>07.05.21</p>
+                    </div>
+
+                    <div class="member-container">
+                        <img src="images/member-4.jpg" class="profile-image" alt="profile-image">
                         <div class="member-text">
                             <p>Name Here</p>
                             <a href="#" class="email">name@email.com</a>
@@ -224,6 +245,14 @@
                             <p>1 week ago</p>
                         </div>
                     </div>
+
+                    <div class="member-container">
+                        <img src="images/member-4.jpg" class="profile-image" alt="profile-image">
+                        <div class="member-text">
+                            <p>Name Here commented on Facebook news</p>
+                            <p>3 days ago</p>                           
+                        </div>                      
+                    </div>
                 </section>
 
                 <section class="message">
@@ -240,7 +269,7 @@
 
                 <!-- Local settings widget -->
 
-                <section class="settings">
+                <section class="settings" id="settings">
                     <h3 class="settings-header">Settings</h3>
 
                     <div class="toggle-code">

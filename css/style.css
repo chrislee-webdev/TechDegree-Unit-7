@@ -47,6 +47,10 @@ h4 {
     padding-left: 30px;
 }
 
+p {
+    font-size: smaller;
+}
+
 .recent-activity {
     padding-top: 0;
 }
@@ -92,6 +96,11 @@ header {
     position: relative;
 }
 
+.bell-icon:hover {
+    transform: rotate(45deg);
+}
+
+
 .notifications {
     width: 10px;
     height: 10px;
@@ -100,11 +109,7 @@ header {
     display: inline-block;
     position: absolute;
     left: 15px;
-    bottom: 20px;   
-}
-
-.bell-icon:hover {
-    transform: scale(1.5);
+    bottom: 18px;   
 }
 
 .user-profile-img {
@@ -116,7 +121,6 @@ header {
 
 .Name {
     padding-left: 0;
-    font-size: medium;
 }
 
 .widget-container-full,
@@ -198,7 +202,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 300px;
     height: 150px;
     border-radius: 25px;
@@ -211,11 +215,22 @@ header {
     margin-bottom: 15px;
 }
 
-svg {
-    padding: 12.5px;
+.social-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: grey;
-}
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  
+  .social-image svg {
+    width: 50px;
+    height: 50px;
+  }
 
 /** Members Section **/
 
