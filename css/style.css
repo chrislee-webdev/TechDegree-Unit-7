@@ -6,6 +6,7 @@
 
 body {
     height: 100vh;
+    font-family: 'Klee One', cursive;
 }
 
 .grid-container {
@@ -88,6 +89,10 @@ header {
     align-items: center;
 }
 
+.your-app {
+    flex-grow: 2;
+}
+
 .bell-icon {
     /* padding-top: 15px; */
     /* margin-left: 10px; */
@@ -116,7 +121,8 @@ header {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    /* margin-left: 25px; */
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .Name {
@@ -324,7 +330,7 @@ header {
 
 #save,
 #cancel {
-    width: 133px;
+    width: 131px;
     border-radius: 3px;
 }
 
@@ -374,14 +380,19 @@ header {
     .members,
     .recent-activity,
     .message,
-    .settings {
+    .settings,
+    .settings-button {
         grid-column: 1 / span 2;
     }
 
-    /* Header */  
+    /* Header */
+    
+    header {
+        height: 60px;
+    }
 
-   h1 {
-       flex-grow: 2;
+   .your-app {
+       flex-grow: 3;
        padding-left: 15px;
    }
 
@@ -392,9 +403,18 @@ header {
    .bell-icon {
         margin-right: 15px;
         padding: 0;
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
         position: relative;
+    }
+
+    .border {
+        border-left: black 1px solid;
+    }
+
+    .notifications {
+        left: 20px;
+        margin-right: 15px;
     }
    
     .daily
@@ -425,6 +445,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
     }
 
     .nav-img {
@@ -462,16 +483,31 @@ header {
     .social-container-large-view {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        padding-right: 20px;
-        padding-left: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .social-container {
+        display: flex;
+        flex-direction: row;
         width: 220px;
         height: 100px;
-        font-size: x-large;
-        justify-content: center;
+    }
+
+    .social-image {
+        margin-left: 10px;
+    }
+
+    .social-text {
+        padding-right: 5px;
+    }
+
+    .social-media {
+        font-size: 25%;
+    }
+
+    .visitors {
+        font-size: 100%;
     }
 
     /* New Member */  
@@ -491,28 +527,55 @@ header {
     }
 
     .member-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         padding-left: 30px;
         padding-right: 30px;
+        flex-grow: 3;
+    }
+
+    .join-date {
+        padding-right: 20px;
     }
 
     /* Message and Settings */
 
     .widget-container,
     #send {
-        width: 650px;
         padding-top: 0;
     }
 
     .form-area {
-        height: 500px;
+        height: 250px;
     }
 
-    .form-field {
-        width: 356.73px; 
+    .toggle-code {
+        display: flex;
+        flex-direction: row;
+        flex-basis: content;
     }
+
+    .toggle-settings {
+        width: 300px;
+    }
+
+    #timezone {
+        width: 663.46px;
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+
+    /* .settings-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } */
 
     #save,
     #cancel {
-        width: 178.365px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 300px;
     }
 }
