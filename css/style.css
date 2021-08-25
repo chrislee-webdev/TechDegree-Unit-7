@@ -323,9 +323,9 @@ header {
 }
 
 .settings-button {
-    width:270px;
+    /* width:270px; */
     text-align: center;
-    margin-left: 25px;
+    /* margin-left: 25px; */
 }
 
 #save,
@@ -362,12 +362,13 @@ header {
 
 /** Media Query **/
 
-@media (min-width: 768px) {
+@media(min-width: 768px) {
     .grid-container {
         grid-template-columns: 55px 1fr;
         grid-template-areas: 
         "header header"
         "navigation main";
+        }
     }
 
     .main {
@@ -380,8 +381,7 @@ header {
     .members,
     .recent-activity,
     .message,
-    .settings,
-    .settings-button {
+    .settings {
         grid-column: 1 / span 2;
     }
 
@@ -414,6 +414,7 @@ header {
 
     .notifications {
         left: 20px;
+        bottom: 25px;
         margin-right: 15px;
     }
    
@@ -448,10 +449,10 @@ header {
         align-items: center;
     }
 
-    .nav-img {
+    /* .nav-img {
         margin-left: auto;
         margin-right: auto;
-    }
+    } */
 
     .traffic-nav {
         display: flex;
@@ -566,16 +567,19 @@ header {
         margin-right: 20px; 
     }
 
-    /* .settings-button {
+    .settings-button {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-    } */
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     #save,
     #cancel {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 300px;
+        width: 320px;
     }
-}
+
+    #cancel {
+        margin-right: 10px;
+    }
