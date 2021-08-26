@@ -373,7 +373,25 @@ header {
         "header header"
         "navigation main";
         }
+
+    .traffic-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .arrow {
+        padding-right: 30px;
+    }
     
+    ul {
+    padding-top: 20px;
+    padding-right: 30px;
+    }
+
+    li {
+    padding-left: 20px;
+    }
 
     .main {
         grid-template-columns: 50%;
