@@ -609,6 +609,11 @@ header {
         grid-column: 1 /span 1 ;
     }
 
+    .social-container {
+        width: 250px;
+        justify-content: space-evenly;
+    }
+
     .recent-activity {
         border-top: lightgray 1px solid;
     }
@@ -618,8 +623,26 @@ header {
         border-left: lightgray 1px solid;
     }
 
-    .switch-flex {
-        
+    #userField {
+        height: 25px;
     }
 
+    #messageField {
+        height: 100px;
+    }
+
+    #email-notifications {
+        padding-top: 0;
+    }
+
+    #settings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 17px;
+    }
+
+    #cancel {
+        margin-right: 0px;
+    }
 }
