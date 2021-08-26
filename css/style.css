@@ -575,6 +575,10 @@ header {
         margin-right: 20px;
     }
 
+    #email-notifications {
+        margin-top: 15px;
+    }
+
     #save,
     #cancel {
         width: 320px;
@@ -606,14 +610,6 @@ header {
     .members,
     .message{
         grid-column: 1 /span 1 ;
-    }
-    
-    .widget-container-full {
-        width: 90vw;
-    }
-
-    .widget-container-half {
-        width: 45vw;
     }
 
     .social-container {
