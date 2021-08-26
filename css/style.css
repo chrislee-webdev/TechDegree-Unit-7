@@ -591,16 +591,6 @@ header {
 }
 
 @media(min-width: 1024px) {
-    .grid-container {
-        grid-template-columns: 55px 1fr;
-        grid-template-areas: 
-        "header header"
-        "navigation main";
-        }
-
-    .main {
-        grid-template-columns: 50%;
-    }
 
     .recent-activity,
     .settings {
