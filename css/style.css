@@ -69,6 +69,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
@@ -89,7 +93,7 @@ header {
     align-items: center;
 }
 
-.your-app {
+.web-app {
     flex-grow: 2;
 }
 
@@ -391,7 +395,7 @@ header {
         height: 60px;
     }
 
-   .your-app {
+   .web-app {
        flex-grow: 3;
        padding-left: 15px;
    }
@@ -591,6 +595,10 @@ header {
 }
 
 @media(min-width: 1024px) {
+
+    .web-app {
+        font-size: x-large;
+    }
 
     .recent-activity,
     .settings {
