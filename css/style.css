@@ -430,7 +430,7 @@ header {
 
     .mobile,
     .activity
-    /* .settings */ {
+    .settings {
         grid-column: 2 span 1;
     }
 
@@ -641,6 +641,16 @@ header {
         flex-direction: column;
         justify-content: space-between;
         padding-bottom: 17px;
+    }
+
+    #timezone {
+        width: 445px;
+        margin-right: 0px;
+    }
+
+    #cancel,
+    #save {
+        width: 220px;
     }
 
     #cancel {
