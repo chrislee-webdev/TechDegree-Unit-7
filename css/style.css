@@ -369,7 +369,7 @@ header {
         "header header"
         "navigation main";
         }
-    }
+    
 
     .main {
         grid-template-columns: 50%;
@@ -583,3 +583,43 @@ header {
     #cancel {
         margin-right: 10px;
     }
+
+}
+
+@media(min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 55px 1fr;
+        grid-template-areas: 
+        "header header"
+        "navigation main";
+        }
+    
+
+    .main {
+        grid-template-columns: 50%;
+    }
+
+    .recent-activity,
+    .settings {
+        grid-column: 2 / span 1;
+    }
+
+    .members,
+    .message{
+        grid-column: 1 /span 1 ;
+    }
+
+    .recent-activity {
+        border-top: lightgray 1px solid;
+    }
+
+    .recent-activity,
+    .settings {
+        border-left: lightgray 1px solid;
+    }
+
+    .switch-flex {
+        
+    }
+
+}
